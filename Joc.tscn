@@ -1,0 +1,222 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://terra.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Molla.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fondo 2.jpg" type="Texture" id=4]
+[ext_resource path="res://terra3.png" type="Texture" id=5]
+[ext_resource path="res://trofeu.png" type="Texture" id=6]
+[ext_resource path="res://nit.jpg" type="Texture" id=7]
+[ext_resource path="res://Kenney Blocks.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Label.gd" type="Script" id=10]
+[ext_resource path="res://TERRA.gd" type="Script" id=11]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 347.115, 413.063 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9824, 475.75 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 117
+font_data = ExtResource( 9 )
+
+[node name="Joc" type="Node2D"]
+position = Vector2( 179, 99 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 4313.0 ]
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 97, 8707 )
+scale = Vector2( 111.942, 82.4578 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( -283, -29.9999 )
+scale = Vector2( 0.103712, 0.104779 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D2/CollisionShape2D"]
+position = Vector2( -2902.27, -4371.11 )
+scale = Vector2( 77.0309, 48.8451 )
+texture = ExtResource( 7 )
+
+[node name="terra" type="Sprite" parent="."]
+position = Vector2( -461.5, 12462.6 )
+scale = Vector2( 55.4434, 8.44775 )
+texture = ExtResource( 5 )
+
+[node name="Trofeu" type="Area2D" parent="."]
+position = Vector2( -517, 868 )
+scale = Vector2( 0.103712, 0.123468 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trofeu"]
+position = Vector2( -38.5688, 16.1992 )
+shape = SubResource( 3 )
+
+[node name="trofeu" type="Sprite" parent="Trofeu"]
+position = Vector2( -28.9263, 24.2988 )
+texture = ExtResource( 6 )
+
+[node name="Molla" parent="." instance=ExtResource( 3 )]
+position = Vector2( -342, 11551 )
+
+[node name="Molla2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -492, 6386 )
+
+[node name="Molla3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -357, 7314 )
+
+[node name="Molla13" parent="." instance=ExtResource( 3 )]
+position = Vector2( -878, 6948 )
+
+[node name="Molla4" parent="." instance=ExtResource( 3 )]
+position = Vector2( -709, 7777 )
+
+[node name="Molla5" parent="." instance=ExtResource( 3 )]
+position = Vector2( -223, 8789 )
+
+[node name="Molla12" parent="." instance=ExtResource( 3 )]
+position = Vector2( -666, 9265 )
+
+[node name="Molla6" parent="." instance=ExtResource( 3 )]
+position = Vector2( -674, 10737 )
+
+[node name="Molla7" parent="." instance=ExtResource( 3 )]
+position = Vector2( -841, 5828 )
+
+[node name="Molla8" parent="." instance=ExtResource( 3 )]
+position = Vector2( -424, 2315 )
+
+[node name="Molla9" parent="." instance=ExtResource( 3 )]
+position = Vector2( -607, 3253 )
+
+[node name="Molla10" parent="." instance=ExtResource( 3 )]
+position = Vector2( -764, 4182 )
+
+[node name="Molla11" parent="." instance=ExtResource( 3 )]
+position = Vector2( -634, 1564 )
+
+[node name="Terres" type="Node2D" parent="."]
+position = Vector2( 23, 6 )
+
+[node name="Terra" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -786, 6979 )
+
+[node name="Terra2" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -286, 8114 )
+
+[node name="Terra4" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -388, 5404 )
+
+[node name="Terra3" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -811, 7800 )
+
+[node name="Terra5" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -899, 5863 )
+
+[node name="Terra6" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -394, 6419 )
+
+[node name="Terra7" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -813, 5111 )
+
+[node name="Terra8" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -265, 7343 )
+
+[node name="Terra9" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -903, 2740 )
+
+[node name="Terra10" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -863, 4215 )
+
+[node name="Terra11" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -435, 4805 )
+
+[node name="Terra28" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -658, 4539 )
+
+[node name="Terra29" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -505, 3730 )
+
+[node name="Terra12" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -525, 3283 )
+
+[node name="Terra13" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -733, 1094 )
+
+[node name="Terra14" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -569, 1596 )
+
+[node name="Terra16" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -1000, 1854 )
+
+[node name="Terra17" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -513, 2345 )
+
+[node name="Terra18" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -780, 9954 )
+
+[node name="Terra19" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -132, 8815 )
+
+[node name="Sprite2" type="Sprite" parent="Terres/Terra19"]
+
+[node name="Terra20" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -768, 9295 )
+
+[node name="Terra21" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -815, 8407 )
+
+[node name="Terra22" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -142, 11107 )
+
+[node name="Terra23" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -300, 9636 )
+
+[node name="Terra24" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -720, 11261 )
+
+[node name="Terra27" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -439, 11576 )
+
+[node name="Terra25" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -284, 10216 )
+
+[node name="Terra26" parent="Terres" instance=ExtResource( 1 )]
+position = Vector2( -783, 10761 )
+
+[node name="Personatge" parent="." instance=ExtResource( 2 )]
+position = Vector2( -888, 11651 )
+
+[node name="TERRA" type="Area2D" parent="." groups=["paddles"]]
+position = Vector2( 14455, 7194 )
+script = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TERRA"]
+physics_interpolation_mode = 2
+position = Vector2( -14421, 5098 )
+shape = SubResource( 1 )
+one_way_collision_margin = 128.0
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.011
+anchor_right = 0.333
+margin_left = -884.0
+margin_top = 583.0
+margin_right = -63.0
+margin_bottom = 760.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 4 )
+script = ExtResource( 10 )
+
+[connection signal="body_entered" from="Trofeu" to="Trofeu" method="_on_Trofeu_body_entered"]
+[connection signal="body_entered" from="Trofeu" to="Label" method="_on_Trofeu_body_entered"]
+[connection signal="body_entered" from="TERRA" to="Trofeu" method="_on_TERRA_body_entered"]
+[connection signal="body_entered" from="TERRA" to="Personatge" method="_on_TERRA_body_entered"]
